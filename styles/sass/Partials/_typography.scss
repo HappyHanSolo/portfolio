@@ -3,5 +3,10 @@ span.topAesthetics{
 }
 
 h1{
-    font-family: $pseudoFont;
+    font-family: $mainFont;
+    font-size: 10rem;
+}
+
+p, h4{
+    font-family: $bodyFont;
 }

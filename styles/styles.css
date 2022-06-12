@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -228,7 +229,20 @@ span.topAesthetics {
 }
 
 h1 {
-  font-family: "La Belle Aurore", cursive;
+  font-family: "Open Sans", sans-serif;
+  font-size: 10rem;
+}
+
+p, h4 {
+  font-family: "Source sans Pro", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.wrapper {
+  margin: 0 auto;
 }
 
 span.topAesthetics {
@@ -243,4 +257,94 @@ span.topAesthetics {
 
 .tagcloud--item:hover {
   color: #36454F;
+}
+
+.contact {
+  background-color: #5169bd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+}
+.contact .contactTextWrapper {
+  width: 20%;
+  font-size: 1.5rem;
+  color: white;
+  margin: 3%;
+}
+.contact .contactTextWrapper h4 {
+  font-size: 3rem;
+}
+.contact .contactTextWrapper ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+}
+.contact .contactTextWrapper ul li {
+  list-style: none;
+  font-size: 3rem;
+}
+.contact .contactTextWrapper ul li a {
+  padding: 20px;
+  color: white;
+}
+.contact .contactFormWrapper form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.6rem;
+  width: 200%;
+}
+.contact .contactFormWrapper form .name {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
+.contact .contactFormWrapper form .emailAddress {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
+.contact .contactFormWrapper form .message {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  resize: none;
+}
+.contact .contactFormWrapper form button {
+  width: 30%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #eeaf98;
+  color: white;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #424b6d;
+}
+footer p {
+  color: white;
+  font-size: 1.5rem;
 }
