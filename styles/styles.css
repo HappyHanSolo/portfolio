@@ -234,14 +234,21 @@ h1 {
   font-size: 10rem;
 }
 
-h4, h2 {
+h2 {
   font-family: "Playfair Display", serif;
-  font-size: 3.5rem;
+  font-size: 5rem;
+  color: #424b6d;
 }
 
 h3 {
   font-family: "Playfair Display", serif;
   font-size: 2.5rem;
+  color: #424b6d;
+}
+
+h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 3.5rem;
 }
 
 p {
@@ -342,6 +349,10 @@ nav ul li a {
   margin: 5% 0 5% 5%;
   color: white;
 }
+.headerContainer .headerTextWrapper a {
+  text-decoration: none;
+  color: inherit;
+}
 .headerContainer .headerImageWrapper {
   width: 30%;
   display: -webkit-box;
@@ -425,7 +436,110 @@ nav ul li a {
 }
 .skillWrapper .skillsText h3 {
   margin-bottom: 0;
-  color: #424b6d;
+}
+
+.portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.portfolio .portfolioGallery ul {
+  list-style: none;
+}
+.portfolio .portfolioGallery ul .projectOneWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px;
+}
+.portfolio .portfolioGallery ul .projectOneWrapper .projectOneImage {
+  width: 20%;
+  height: 20%;
+}
+.portfolio .portfolioGallery ul .projectOneWrapper .projectOneText {
+  width: 25%;
+}
+.portfolio .portfolioGallery ul .projectOneWrapper .projectOneText ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0;
+}
+.portfolio .portfolioGallery ul .projectOneWrapper .projectOneText ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+}
+.portfolio .portfolioGallery ul .projectOneWrapper .projectOneText ul li i {
+  font-size: 4rem;
+}
+.portfolio .portfolioGallery ul .projectOneWrapper .projectOneText .partnerCredit {
+  font-size: 1.5rem;
+}
+.portfolio .portfolioGallery ul .projectOneWrapper .projectOneText .partnerCredit a {
+  text-decoration: none;
+  color: mediumblue;
+}
+.portfolio .portfolioGallery ul .projectOneWrapper .projectOneText button a {
+  text-decoration: none;
+  color: inherit;
+}
+.portfolio .portfolioGallery ul .projectTwoWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.portfolio .portfolioGallery ul .projectTwoWrapper .projectTwoImage {
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+}
+.portfolio .portfolioGallery ul .projectTwoWrapper .projectTwoText {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contact {
