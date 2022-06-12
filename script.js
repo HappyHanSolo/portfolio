@@ -1,9 +1,9 @@
 const myTags = [
-    'JavaScript', 'CSS', 'HTML', 'React','GitHub', 'git','Firebase','jQuery'
+  'HTML','CSS', 'Javascript', 'jQuery','React', 'Git', 'Github','RESTful APIs', 'Firebase','SASS','VS Code', 'Responsive Websites', 'Web Accessibility' 
 ];
 
 var tagCloud = TagCloud('.skillContent', myTags,{
-    radius: 300,
+    radius: 250,
     maxSpeed: 'fast',
     initSpeed: 'fast',
     direction: 135,

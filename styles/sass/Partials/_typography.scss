@@ -8,12 +8,19 @@ h1{
 }
 
  h4, h2{
-    font-family: $bodyFont;
+    font-family: $headerFont;
+    font-size: 3.5rem;
+}
+
+h3{
+    font-family: $headerFont;
+    font-size: 2.5rem;
 }
 
 p {
     font-family: $bodyFont;
     font-size: 2rem;
+    text-decoration: none;
 }
 
 

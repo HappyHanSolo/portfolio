@@ -10,19 +10,20 @@
     <script src="https://kit.fontawesome.com/b1afee0308.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
     <div class="wrapper">
         <div class="outerContainer">
             <span class="topAesthetics"></span>
         </div>
-        <header class="headerContainer">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills & Tools</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <header class="headerContainer" id="home">
             <div class="headerTextWrapper">
                 <h1>Hi, I'm Hanson Wong</h1>
                 <p>Toronto based Web Developer</p>
@@ -31,26 +32,40 @@
             <div class="headerImageWrapper"><img class="sketchOfHanson" src="./assets/hansonSketch.png" alt="Avatar of Hanson made with Makowka Maker"></div>
         </header>
         <main>
-            <section class="aboutWrapper">
+            <section class="aboutWrapper" id="about">
                 <div class="aboutTextWrapper">
                     <h2>About Me </h2>
-                    <p>Hello! Thanks for dropping by 🤗! I am currently a <a href="https://junocollege.com/"> Juno College </a>student <span>(cohort 41!)</span> learning the ins-and-outs of being a developer! Prior to this, I had graduated from University of Waterloo with a honours bachelor of science in biomedical science and a joint honurs in psychology. 
-                    
+                    <p>Hello! Thanks for dropping by 🤗! I am currently a <a href="https://junocollege.com/"> Juno College </a>student <span>(cohort 41!)</span> learning the ins-and-outs of being a developer. Prior to this, I had graduated from University of Waterloo with a honours bachelor of science in biomedical science and a joint honurs in psychology. 
+                    <br>
+                    <br>
                     Outside of coding, I am the co-founder of <a href="https://plasticlfux.ca">Plastic Flux</a> and high-performance dragon boat paddler 🐉​ for <a href="https://www.truenorthpaddlingclub.com/home">True North Paddling Club</a><span> (True North SLP Premier Open and True North Hammerheads).</span> If I'm not learning about code, you can usually find me out on the water! ​🌊​ </p>
+
                 </div>
                 <div class="aboutImageWrapper"><img class="photoOfHanson" src="./assets/hansonHeadshot.jpg" alt="Headshot of Hanson"></div>
             </section>
-            <section class="skillWrapper">
+            <section class="skillWrapper" id="skills">
                 <div class="skillsText">
                     <h2>My Skill Tree 🌳​</h2>
-                    <p></p>
+                    <p>These are my current skills, tools and technologies I use to forge your ideas to actuality 
+                    </p>
+                    <h3>Currently working on 🪴</h3>
+                    <p>
+                    At present, I am focused on deepening my understanding of React and improving my skills in vanilla Javascript. 
+                    </p>
+                    <h3>Stretch Goals 🌱</h3>
+                    <p>
+                    In the near future, I would like to  participate in #100DaysOfCode, learn and integrate animations into my projects 👨🏻‍💻    
+                    </p>
                 </div>
                 <div class="skillImageContainer"><span class="skillContent"></span></div>
             </section>
-            <section class="portfolio">
+            <section class="portfolio" id="portfolio">
                 <div class="portfolioTextWrapper">
                     <h2>My Portfolio</h2>
-                    <p>A small collection of some of my recent work.</p>
+                    <p>A small collection of some of my recent work.
+                    
+
+                    </p>
                 </div>
                 <div class="portfolioGallery">
                     <div class="firstRowWrapper">
@@ -68,10 +83,10 @@
                     </div>
                 </div>
             </section>
-            <section class="contact">
+            <section class="contact" id="contact">
                 <div class="contactTextWrapper">
                     <h4>Let's Connect! 💌​</h4>
-                    <p>If you ever want to reach out to me, shoot me a message here or with through my social media! I love connecting with people over coffee ☕️ or bubble tea 🧋.</p>
+                    <p>If you ever want to reach out to me just to say Hello 👋, ask for my resume or to see if we can dream up a project, shoot me a message here or with through my social media! I love connecting with people over coffee ☕️ or bubble tea 🧋.</p>
                     <ul>
                         <li><a href="https://www.linkedin.com/in/hanson-wong-776520157/"><i class="fa-brands fa-linkedin-in"></i><span class="sr-only">LinkedIn Link</span></a></li>
                         <li><a href="https://twitter.com/HansonTweets"><i class="fa-brands fa-twitter"></i><span class="sr-only">Twitter Link</span></a></li>
