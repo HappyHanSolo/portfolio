@@ -7,6 +7,13 @@ h1{
     font-size: 10rem;
 }
 
-p, h4{
+ h4, h2{
     font-family: $bodyFont;
 }
+
+p {
+    font-family: $bodyFont;
+    font-size: 2rem;
+}
+
+

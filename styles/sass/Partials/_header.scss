@@ -1,0 +1,22 @@
+.headerContainer{
+    display: flex;
+    flex-direction: row;
+    background-color: #424b6d;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    .headerTextWrapper{
+        width: 40%;
+        margin: 5% 0 5% 5%;
+        color: white;
+    }
+    .headerImageWrapper{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        .sketchOfHanson{
+            border-radius: 50%;
+            width: 50%;
+        }
+    }
+}

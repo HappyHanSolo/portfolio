@@ -233,8 +233,13 @@ h1 {
   font-size: 10rem;
 }
 
-p, h4 {
+h4, h2 {
   font-family: "Source sans Pro", sans-serif;
+}
+
+p {
+  font-family: "Source sans Pro", sans-serif;
+  font-size: 2rem;
 }
 
 html {
@@ -243,6 +248,16 @@ html {
 
 .wrapper {
   margin: 0 auto;
+}
+
+button {
+  width: 30%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #eeaf98;
+  color: white;
+  font-size: 1.5rem;
 }
 
 span.topAesthetics {
@@ -257,6 +272,85 @@ span.topAesthetics {
 
 .tagcloud--item:hover {
   color: #36454F;
+}
+
+.headerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #424b6d;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.headerContainer .headerTextWrapper {
+  width: 40%;
+  margin: 5% 0 5% 5%;
+  color: white;
+}
+.headerContainer .headerImageWrapper {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.headerContainer .headerImageWrapper .sketchOfHanson {
+  border-radius: 50%;
+  width: 50%;
+}
+
+.aboutWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  background-color: #f2f4f5;
+  padding: 3%;
+}
+.aboutWrapper .aboutTextWrapper {
+  width: 40%;
+  margin-left: 5%;
+}
+.aboutWrapper .aboutTextWrapper h2 {
+  font-size: 3rem;
+}
+.aboutWrapper .aboutTextWrapper p {
+  font-size: 2rem;
+}
+.aboutWrapper .aboutTextWrapper p a {
+  text-decoration: none;
+}
+.aboutWrapper .aboutImageWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.aboutWrapper .aboutImageWrapper .photoOfHanson {
+  width: 50%;
+  border-radius: 10px;
+  margin-right: 5%;
 }
 
 .contact {
@@ -276,7 +370,8 @@ span.topAesthetics {
   margin: 3%;
 }
 .contact .contactTextWrapper h4 {
-  font-size: 3rem;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
 }
 .contact .contactTextWrapper ul {
   display: -webkit-box;
@@ -299,6 +394,9 @@ span.topAesthetics {
   padding: 20px;
   color: white;
 }
+.contact .contactFormWrapper {
+  width: 30%;
+}
 .contact .contactFormWrapper form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -308,7 +406,6 @@ span.topAesthetics {
       -ms-flex-direction: column;
           flex-direction: column;
   font-size: 1.6rem;
-  width: 200%;
 }
 .contact .contactFormWrapper form .name {
   padding: 10px;
@@ -325,14 +422,6 @@ span.topAesthetics {
   margin: 10px;
   border-radius: 5px;
   resize: none;
-}
-.contact .contactFormWrapper form button {
-  width: 30%;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 5px;
-  background-color: #eeaf98;
-  color: white;
 }
 
 footer {
