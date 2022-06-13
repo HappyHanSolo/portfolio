@@ -379,7 +379,6 @@ nav ul li a {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
-  background-color: #f2f4f5;
   padding: 3%;
 }
 .aboutWrapper .aboutTextWrapper {
@@ -392,10 +391,16 @@ nav ul li a {
 }
 .aboutWrapper .aboutTextWrapper p {
   font-size: 2rem;
+  line-height: 2.5rem;
 }
 .aboutWrapper .aboutTextWrapper p a {
   text-decoration: none;
   color: mediumblue;
+}
+.aboutWrapper .aboutTextWrapper p img {
+  width: 60px;
+  height: auto;
+  display: block;
 }
 .aboutWrapper .aboutImageWrapper {
   display: -webkit-box;
