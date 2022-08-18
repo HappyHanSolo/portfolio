@@ -5,16 +5,16 @@
     .portfolioGallery{
         ul{
             list-style: none;
-            .projectOneWrapper{
+            .projectOneWrapper, .projectTwoWrapper{
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
                 margin:10px;
-                .projectOneImage{
+                .projectOneImage, .projectTwoImage{
                     width: 20%;
                     height: 20%;
                 }
-                .projectOneText{
+                .projectOneText, .projectTwoText{
                     width: 25%;
                     ul{
                         display: flex;
@@ -26,6 +26,7 @@
                             flex-direction: column;
                             align-items: center;
                             font-size: 1.5rem;
+                            padding: 5px;
                             i{
                                 font-size: 4rem;
                             }
@@ -39,30 +40,15 @@
                         }
                     }
                 button{
+                    margin: 0px;
                     a{
                         text-decoration: none;
                         color: inherit;
                     }
-                }
-                }
-            }
-        
-            .projectTwoWrapper{
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                .projectTwoImage{
-                    width: 20%;
-                    height: 20%;
-                    border-radius: 50%;
-                }
-                .projectTwoText{
-                    width: 20%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    }
                 }
             }
+           
         }
     }       
 }
