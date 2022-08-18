@@ -343,6 +343,7 @@ nav ul li a {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100vh;
+  min-height: 650px;
 }
 .headerContainer .headerTextWrapper {
   width: 40%;
@@ -354,7 +355,7 @@ nav ul li a {
   color: inherit;
 }
 .headerContainer .headerImageWrapper {
-  width: 30%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -364,7 +365,10 @@ nav ul li a {
 }
 .headerContainer .headerImageWrapper .sketchOfHanson {
   border-radius: 50%;
-  width: 50%;
+  width: 100%;
+  max-width: 400px;
+  min-width: 400px;
+  height: auto;
 }
 
 .aboutWrapper {
