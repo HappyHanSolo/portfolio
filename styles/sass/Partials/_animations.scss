@@ -1,25 +1,20 @@
-.wrapper{
+.wrapper {
     position: relative;
-    .animatedThings {
-            overflow: hidden;
-            position: sticky;
-            bottom: 0vh; 
-            height: 120px;
-            .pikmin {
-                position: absolute;
-                bottom: 0;
-                right: -10%;
-                animation: pikminStroll 10s linear 1s infinite;
-                img{
-                display: inline-block;
-                object-fit: none;
-                height: 100px;
-                width:230px;
-                }
-            }
-    
+      .pikmin {
+        position: fixed;
+        bottom: 0;
+        right: -10%;
+        animation: pikminStroll 90s linear 300s infinite;
+        img {
+          display: inline-block;
+          object-fit: none;
+          height: 100px;
+          width: 230px;
         }
-}
+      }
+  }
+
+
 
 @keyframes pikminStroll {
     0% {right: -10%}

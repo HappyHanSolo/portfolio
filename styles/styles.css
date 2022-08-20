@@ -278,20 +278,14 @@ button {
 .wrapper {
   position: relative;
 }
-.wrapper .animatedThings {
-  overflow: hidden;
-  position: sticky;
-  bottom: 0vh;
-  height: 120px;
-}
-.wrapper .animatedThings .pikmin {
-  position: absolute;
+.wrapper .pikmin {
+  position: fixed;
   bottom: 0;
   right: -10%;
-  -webkit-animation: pikminStroll 10s linear 1s infinite;
-          animation: pikminStroll 10s linear 1s infinite;
+  -webkit-animation: pikminStroll 90s linear 300s infinite;
+          animation: pikminStroll 90s linear 300s infinite;
 }
-.wrapper .animatedThings .pikmin img {
+.wrapper .pikmin img {
   display: inline-block;
   -o-object-fit: none;
      object-fit: none;
