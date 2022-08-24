@@ -266,7 +266,7 @@ html {
 }
 
 button {
-  width: 30%;
+  width: 175px;
   padding: 10px 0px;
   margin: 10px;
   border-radius: 5px;
@@ -406,7 +406,6 @@ nav ul li a {
 .headerContainer .headerTextWrapper a {
   text-decoration: none;
   color: inherit;
-  padding: 10px 40px;
 }
 .headerContainer .headerImageWrapper {
   width: 50%;
