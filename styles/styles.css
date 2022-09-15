@@ -225,6 +225,72 @@ template {
   overflow: hidden;
 }
 
+@media (max-width: 1150px) {
+  body .aboutWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .aboutWrapper .aboutTextWrapper {
+    width: 90%;
+  }
+  body .aboutWrapper .aboutImageWrapper {
+    width: 100%;
+  }
+  body .aboutWrapper .aboutImageWrapper .photoOfHanson {
+    max-width: 270px;
+  }
+  body .skillWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .skillWrapper .skillsText {
+    width: 90%;
+  }
+}
+@media (max-width: 900px) {
+  body .headerContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .headerContainer .headerTextWrapper {
+    margin: 0 auto;
+  }
+  body .headerContainer .headerTextWrapper h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+  body .headerContainer .headerTextWrapper p {
+    text-align: center;
+  }
+  body .headerContainer .headerTextWrapper a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 10px;
+  }
+  body .headerContainer .headerImageWrapper .sketchOfHanson {
+    max-width: 250px;
+    min-width: 0px;
+  }
+}
 span.topAesthetics {
   font-family: "La Belle Aurore", cursive;
 }
