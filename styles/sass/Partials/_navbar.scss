@@ -1,10 +1,10 @@
 nav {
     display: flex;
     flex-direction: row;
-    background-color: rgb(65, 74, 108, 0.5);
+    background: transparent;
     margin: 0 auto;
     position: fixed;
-    justify-content: flex-end;
+    justify-content: center;
     width: 100%;
     ul{
         display: flex;
@@ -12,12 +12,22 @@ nav {
         list-style: none;
         li{
            padding: 20px;
-           font-size: 2.5rem;
+           font-size: 1.5rem;
            font-family: $mainFont;
            color: white;
            a {
             text-decoration: none;
             color: inherit;
+           }
+           .homelink{
+            position: fixed;
+            left: 20px;
+            top: 20px;
+           }
+           .connectlink{
+            position: fixed;
+            right: 20px;
+            top: 20px;
            }
         }
     }
