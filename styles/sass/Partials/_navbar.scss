@@ -15,19 +15,26 @@ nav {
            font-size: 1.5rem;
            font-family: $mainFont;
            color: white;
+           transition: background-color 0.3s ease;
+           border-radius: 5px;
+           
+           &:hover {
+               background-color: rgba(255, 255, 255, 0.2);
+           }
+           
            a {
             text-decoration: none;
             color: inherit;
-           }
-           .homelink{
-            position: fixed;
-            left: 20px;
-            top: 20px;
-           }
-           .connectlink{
-            position: fixed;
-            right: 20px;
-            top: 20px;
+            .homelink{
+             position: fixed;
+             left: 20px;
+             top: 20px;
+            }
+            .connectlink{
+             position: fixed;
+             right: 20px;
+             top: 20px;
+            }
            }
         }
     }
