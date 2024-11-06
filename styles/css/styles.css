@@ -30,8 +30,7 @@ figure {
 }
 
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   height: 0;
   overflow: visible;
 }
@@ -49,8 +48,7 @@ a {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 b, strong {
@@ -144,8 +142,7 @@ fieldset {
 }
 
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   color: inherit;
   display: table;
   max-width: 100%;
@@ -163,8 +160,7 @@ textarea {
 }
 
 [type=checkbox], [type=radio] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
 }
 
@@ -207,6 +203,7 @@ template {
 }
 
 * {
+  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -219,21 +216,15 @@ template {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
 @media (max-width: 1150px) {
   body .aboutWrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    justify-content: center;
   }
   body .aboutWrapper .aboutTextWrapper {
     width: 90%;
@@ -245,13 +236,8 @@ template {
     max-width: 270px;
   }
   body .skillWrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    justify-content: center;
   }
   body .skillWrapper .skillsText {
     width: 90%;
@@ -259,13 +245,8 @@ template {
 }
 @media (max-width: 900px) {
   body .headerContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   body .headerContainer .headerTextWrapper {
     margin: 0 auto;
@@ -278,12 +259,8 @@ template {
     text-align: center;
   }
   body .headerContainer .headerTextWrapper a {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     margin: 10px;
   }
   body .headerContainer .headerImageWrapper .sketchOfHanson {
@@ -348,33 +325,13 @@ button {
   position: fixed;
   bottom: 0;
   right: -10%;
-  -webkit-animation: pikminStroll 90s linear 300s infinite;
-          animation: pikminStroll 90s linear 300s infinite;
+  animation: pikminStroll 90s linear 300s infinite;
 }
 .wrapper .pikmin img {
   display: inline-block;
-  -o-object-fit: none;
-     object-fit: none;
+  object-fit: none;
   height: 100px;
   width: 230px;
-}
-
-@-webkit-keyframes pikminStroll {
-  0% {
-    right: -10%;
-  }
-  25% {
-    right: 25%;
-  }
-  50% {
-    right: 50%;
-  }
-  75% {
-    right: 75%;
-  }
-  100% {
-    right: 100%;
-  }
 }
 
 @keyframes pikminStroll {
@@ -409,58 +366,53 @@ span.topAesthetics {
 }
 
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  background-color: rgba(65, 74, 108, 0.5);
+  flex-direction: row;
+  background: transparent;
   margin: 0 auto;
   position: fixed;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: center;
   width: 100%;
 }
 nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   list-style: none;
 }
 nav ul li {
   padding: 20px;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-family: "Open Sans", sans-serif;
-  color: white;
+  transition: all 0.3s ease;
+  border-radius: 25px;
+  margin: 0 5px;
+}
+nav ul li:not(:has(a.homelink)):hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 20px 30px;
 }
 nav ul li a {
   text-decoration: none;
-  color: inherit;
+  color: red;
+}
+nav ul li a .homelink {
+  position: fixed;
+  left: 20px;
+  top: 20px;
+}
+nav ul li a .connectlink {
+  position: fixed;
+  right: 20px;
+  top: 20px;
 }
 
 .headerContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   background-color: #424b6d;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin: 0 auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   height: 100vh;
   min-height: 650px;
 }
@@ -475,12 +427,8 @@ nav ul li a {
 }
 .headerContainer .headerImageWrapper {
   width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 .headerContainer .headerImageWrapper .sketchOfHanson {
   border-radius: 50%;
@@ -491,16 +439,9 @@ nav ul li a {
 }
 
 .aboutWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  justify-content: center;
   margin: 0 auto;
   padding: 3%;
 }
@@ -526,35 +467,23 @@ nav ul li a {
   display: block;
 }
 .aboutWrapper .aboutImageWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 30%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 .aboutWrapper .aboutImageWrapper .photoOfHanson {
   width: 50%;
   border-radius: 5%;
   margin-right: 5%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   min-width: 270px;
 }
 
 .skillWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  justify-content: center;
   padding: 20px;
   background-color: #d0d4ec;
 }
@@ -571,31 +500,17 @@ nav ul li a {
 }
 
 .portfolio {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 .portfolio .portfolioGallery ul {
   list-style: none;
 }
 .portfolio .portfolioGallery ul .projectOneWrapper, .portfolio .portfolioGallery ul .projectTwoWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  justify-content: center;
   margin: 10px;
 }
 .portfolio .portfolioGallery ul .projectOneWrapper .projectOneImage, .portfolio .portfolioGallery ul .projectOneWrapper .projectTwoImage, .portfolio .portfolioGallery ul .projectTwoWrapper .projectOneImage, .portfolio .portfolioGallery ul .projectTwoWrapper .projectTwoImage {
@@ -606,28 +521,15 @@ nav ul li a {
   width: 25%;
 }
 .portfolio .portfolioGallery ul .projectOneWrapper .projectOneText ul, .portfolio .portfolioGallery ul .projectOneWrapper .projectTwoText ul, .portfolio .portfolioGallery ul .projectTwoWrapper .projectOneText ul, .portfolio .portfolioGallery ul .projectTwoWrapper .projectTwoText ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-around;
   padding: 0;
 }
 .portfolio .portfolioGallery ul .projectOneWrapper .projectOneText ul li, .portfolio .portfolioGallery ul .projectOneWrapper .projectTwoText ul li, .portfolio .portfolioGallery ul .projectTwoWrapper .projectOneText ul li, .portfolio .portfolioGallery ul .projectTwoWrapper .projectTwoText ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   font-size: 1.5rem;
   padding: 5px;
 }
@@ -651,12 +553,8 @@ nav ul li a {
 
 .contact {
   background-color: #5169bd;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding: 20px;
 }
 .contact .contactTextWrapper {
@@ -669,16 +567,9 @@ nav ul li a {
   margin-bottom: 20px;
 }
 .contact .contactTextWrapper ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  justify-content: center;
   padding: 0;
 }
 .contact .contactTextWrapper ul li {
@@ -693,13 +584,8 @@ nav ul li a {
   width: 30%;
 }
 .contact .contactFormWrapper form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   font-size: 1.6rem;
 }
 .contact .contactFormWrapper form .name {
@@ -720,15 +606,13 @@ nav ul li a {
 }
 
 footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   background-color: #424b6d;
 }
 footer p {
   color: white;
   font-size: 1.5rem;
 }
+
+/*# sourceMappingURL=styles.css.map */

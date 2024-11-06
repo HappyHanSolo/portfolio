@@ -14,7 +14,6 @@ nav {
            padding: 20px;
            font-size: 1.5rem;
            font-family: $mainFont;
-           color: green;
            transition: all 0.3s ease;
            border-radius: 25px;
            margin: 0 5px;
@@ -26,7 +25,7 @@ nav {
            
            a {
             text-decoration: none;
-            color: inherit;
+            color: red;
             .homelink{
              position: fixed;
              left: 20px;
