@@ -5,8 +5,6 @@ import Home from "./components/Pages/Home/Home";
 import CompletedConnectForm from "./components/Pages/CompletedConnectForm/index";
 
 
-
-
 export default function App() {
   return (
     <BrowserRouter>
