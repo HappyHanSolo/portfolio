@@ -1,0 +1,618 @@
+@import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap");
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article, aside, footer, header, nav, section {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+figcaption, figure, main {
+  display: block;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: inherit;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+code, kbd, samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+audio, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, html [type=button], [type=reset], [type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox], [type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details, menu {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@media (max-width: 1150px) {
+  body .aboutWrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+  body .aboutWrapper .aboutTextWrapper {
+    width: 90%;
+  }
+  body .aboutWrapper .aboutImageWrapper {
+    width: 100%;
+  }
+  body .aboutWrapper .aboutImageWrapper .photoOfHanson {
+    max-width: 270px;
+  }
+  body .skillWrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+  body .skillWrapper .skillsText {
+    width: 90%;
+  }
+}
+@media (max-width: 900px) {
+  body .headerContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  body .headerContainer .headerTextWrapper {
+    margin: 0 auto;
+  }
+  body .headerContainer .headerTextWrapper h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+  body .headerContainer .headerTextWrapper p {
+    text-align: center;
+  }
+  body .headerContainer .headerTextWrapper a {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+  }
+  body .headerContainer .headerImageWrapper .sketchOfHanson {
+    max-width: 250px;
+    min-width: 0px;
+  }
+}
+span.topAesthetics {
+  font-family: "La Belle Aurore", cursive;
+}
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 10rem;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 5rem;
+  color: #424b6d;
+}
+
+h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  color: #424b6d;
+}
+
+h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 3.5rem;
+}
+
+p {
+  font-family: "Source sans Pro", sans-serif;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+button {
+  width: 175px;
+  padding: 10px 0px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #eeaf98;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.wrapper {
+  position: relative;
+}
+.wrapper .pikmin {
+  position: fixed;
+  bottom: 0;
+  right: -10%;
+  animation: pikminStroll 90s linear 300s infinite;
+}
+.wrapper .pikmin img {
+  display: inline-block;
+  object-fit: none;
+  height: 100px;
+  width: 230px;
+}
+
+@keyframes pikminStroll {
+  0% {
+    right: -10%;
+  }
+  25% {
+    right: 25%;
+  }
+  50% {
+    right: 50%;
+  }
+  75% {
+    right: 75%;
+  }
+  100% {
+    right: 100%;
+  }
+}
+span.topAesthetics {
+  content: "<html>";
+}
+
+.tagcloud {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 650;
+}
+
+.tagcloud--item:hover {
+  color: #36454F;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  background: transparent;
+  margin: 0 auto;
+  position: fixed;
+  justify-content: center;
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+nav ul li {
+  padding: 20px;
+  font-size: 1.5rem;
+  font-family: "Open Sans", sans-serif;
+  transition: all 0.3s ease;
+  border-radius: 25px;
+  margin: 0 5px;
+}
+nav ul li:not(:has(a.homelink)):hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 20px 30px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: red;
+}
+nav ul li a .homelink {
+  position: fixed;
+  left: 20px;
+  top: 20px;
+}
+nav ul li a .connectlink {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  background-color: #424b6d;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+  height: 100vh;
+  min-height: 650px;
+}
+.headerContainer .headerTextWrapper {
+  width: 40%;
+  margin: 5% 0 5% 5%;
+  color: white;
+}
+.headerContainer .headerTextWrapper a {
+  text-decoration: none;
+  color: inherit;
+}
+.headerContainer .headerImageWrapper {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.headerContainer .headerImageWrapper .sketchOfHanson {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 400px;
+  min-width: 400px;
+  height: auto;
+}
+
+.aboutWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 3%;
+}
+.aboutWrapper .aboutTextWrapper {
+  width: 40%;
+  margin-left: 5%;
+}
+.aboutWrapper .aboutTextWrapper h2 {
+  font-size: 3rem;
+  color: #5169BD;
+}
+.aboutWrapper .aboutTextWrapper p {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+.aboutWrapper .aboutTextWrapper p a {
+  text-decoration: none;
+  color: mediumblue;
+}
+.aboutWrapper .aboutTextWrapper p img {
+  width: 60px;
+  height: auto;
+  display: block;
+}
+.aboutWrapper .aboutImageWrapper {
+  display: flex;
+  width: 30%;
+  justify-content: center;
+}
+.aboutWrapper .aboutImageWrapper .photoOfHanson {
+  width: 50%;
+  border-radius: 5%;
+  margin-right: 5%;
+  height: 100%;
+  object-fit: contain;
+  min-width: 270px;
+}
+
+.skillWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+  background-color: #d0d4ec;
+}
+.skillWrapper .skillsText {
+  width: 35%;
+  margin-left: 5%;
+  margin-right: 3%;
+}
+.skillWrapper .skillsText h2 {
+  color: #2A3003;
+}
+.skillWrapper .skillsText h3 {
+  margin-bottom: 0;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.portfolio .portfolioGallery ul {
+  list-style: none;
+}
+.portfolio .portfolioGallery ul .projectOneWrapper, .portfolio .portfolioGallery ul .projectTwoWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px;
+}
+.portfolio .portfolioGallery ul .projectOneWrapper .projectOneImage, .portfolio .portfolioGallery ul .projectOneWrapper .projectTwoImage, .portfolio .portfolioGallery ul .projectTwoWrapper .projectOneImage, .portfolio .portfolioGallery ul .projectTwoWrapper .projectTwoImage {
+  width: 20%;
+  height: 20%;
+}
+.portfolio .portfolioGallery ul .projectOneWrapper .projectOneText, .portfolio .portfolioGallery ul .projectOneWrapper .projectTwoText, .portfolio .portfolioGallery ul .projectTwoWrapper .projectOneText, .portfolio .portfolioGallery ul .projectTwoWrapper .projectTwoText {
+  width: 25%;
+}
+.portfolio .portfolioGallery ul .projectOneWrapper .projectOneText ul, .portfolio .portfolioGallery ul .projectOneWrapper .projectTwoText ul, .portfolio .portfolioGallery ul .projectTwoWrapper .projectOneText ul, .portfolio .portfolioGallery ul .projectTwoWrapper .projectTwoText ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0;
+}
+.portfolio .portfolioGallery ul .projectOneWrapper .projectOneText ul li, .portfolio .portfolioGallery ul .projectOneWrapper .projectTwoText ul li, .portfolio .portfolioGallery ul .projectTwoWrapper .projectOneText ul li, .portfolio .portfolioGallery ul .projectTwoWrapper .projectTwoText ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 5px;
+}
+.portfolio .portfolioGallery ul .projectOneWrapper .projectOneText ul li i, .portfolio .portfolioGallery ul .projectOneWrapper .projectTwoText ul li i, .portfolio .portfolioGallery ul .projectTwoWrapper .projectOneText ul li i, .portfolio .portfolioGallery ul .projectTwoWrapper .projectTwoText ul li i {
+  font-size: 4rem;
+}
+.portfolio .portfolioGallery ul .projectOneWrapper .projectOneText .partnerCredit, .portfolio .portfolioGallery ul .projectOneWrapper .projectTwoText .partnerCredit, .portfolio .portfolioGallery ul .projectTwoWrapper .projectOneText .partnerCredit, .portfolio .portfolioGallery ul .projectTwoWrapper .projectTwoText .partnerCredit {
+  font-size: 1.5rem;
+}
+.portfolio .portfolioGallery ul .projectOneWrapper .projectOneText .partnerCredit a, .portfolio .portfolioGallery ul .projectOneWrapper .projectTwoText .partnerCredit a, .portfolio .portfolioGallery ul .projectTwoWrapper .projectOneText .partnerCredit a, .portfolio .portfolioGallery ul .projectTwoWrapper .projectTwoText .partnerCredit a {
+  text-decoration: none;
+  color: mediumblue;
+}
+.portfolio .portfolioGallery ul .projectOneWrapper .projectOneText button, .portfolio .portfolioGallery ul .projectOneWrapper .projectTwoText button, .portfolio .portfolioGallery ul .projectTwoWrapper .projectOneText button, .portfolio .portfolioGallery ul .projectTwoWrapper .projectTwoText button {
+  margin: 0px;
+}
+.portfolio .portfolioGallery ul .projectOneWrapper .projectOneText button a, .portfolio .portfolioGallery ul .projectOneWrapper .projectTwoText button a, .portfolio .portfolioGallery ul .projectTwoWrapper .projectOneText button a, .portfolio .portfolioGallery ul .projectTwoWrapper .projectTwoText button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact {
+  background-color: #5169bd;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.contact .contactTextWrapper {
+  width: 20%;
+  font-size: 1.5rem;
+  color: white;
+  margin: 3%;
+}
+.contact .contactTextWrapper h4 {
+  margin-bottom: 20px;
+}
+.contact .contactTextWrapper ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+}
+.contact .contactTextWrapper ul li {
+  list-style: none;
+  font-size: 3rem;
+}
+.contact .contactTextWrapper ul li a {
+  padding: 20px;
+  color: white;
+}
+.contact .contactFormWrapper {
+  width: 30%;
+}
+.contact .contactFormWrapper form {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+}
+.contact .contactFormWrapper form .name {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
+.contact .contactFormWrapper form .emailAddress {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
+.contact .contactFormWrapper form .message {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  resize: none;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #424b6d;
+}
+footer p {
+  color: white;
+  font-size: 1.5rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

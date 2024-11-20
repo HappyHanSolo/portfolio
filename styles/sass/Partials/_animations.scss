@@ -1,0 +1,25 @@
+.wrapper {
+    position: relative;
+      .pikmin {
+        position: fixed;
+        bottom: 0;
+        right: -10%;
+        animation: pikminStroll 90s linear 300s infinite;
+        img {
+          display: inline-block;
+          object-fit: none;
+          height: 100px;
+          width: 230px;
+        }
+      }
+  }
+
+
+
+@keyframes pikminStroll {
+    0% {right: -10%}
+    25% {right: 25%}
+    50% {right: 50%}
+    75% {right: 75%}
+    100% {right:100%}
+}

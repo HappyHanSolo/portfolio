@@ -1,0 +1,54 @@
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .portfolioGallery{
+        ul{
+            list-style: none;
+            .projectOneWrapper, .projectTwoWrapper{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin:10px;
+                .projectOneImage, .projectTwoImage{
+                    width: 20%;
+                    height: 20%;
+                }
+                .projectOneText, .projectTwoText{
+                    width: 25%;
+                    ul{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        padding: 0;
+                        li{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            font-size: 1.5rem;
+                            padding: 5px;
+                            i{
+                                font-size: 4rem;
+                            }
+                        }
+                    }
+                    .partnerCredit{
+                        font-size: 1.5rem;
+                        a{
+                            text-decoration: none;
+                            color: mediumblue;
+                        }
+                    }
+                button{
+                    margin: 0px;
+                    a{
+                        text-decoration: none;
+                        color: inherit;
+                    }
+                    }
+                }
+            }
+           
+        }
+    }       
+}

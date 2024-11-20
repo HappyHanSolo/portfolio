@@ -1,0 +1,31 @@
+.headerContainer{
+    display: flex;
+    flex-direction: row;
+    background-color: #424b6d;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    height: 100vh;
+    min-height: 650px;
+    .headerTextWrapper{
+        width: 40%;
+        margin: 5% 0 5% 5%;
+        color: white;
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+    .headerImageWrapper{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        .sketchOfHanson{
+            border-radius: 50%;
+            width: 100%;
+            max-width: 400px;
+            min-width: 400px;
+            height: auto;
+        }
+    }
+}

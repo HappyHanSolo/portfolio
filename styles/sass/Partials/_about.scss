@@ -1,0 +1,42 @@
+.aboutWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 3%;
+    .aboutTextWrapper{
+        width: 40%;
+        margin-left: 5%;
+        h2{
+            font-size: 3rem;
+            color: #5169BD;
+        }
+        p{
+            font-size: 2rem;
+            line-height: 2.5rem;           
+            a{
+                text-decoration: none;
+                color: mediumblue;
+            }
+            img{
+                width: 60px;
+                height: auto;
+                display: block;
+            }
+        }
+    }
+    .aboutImageWrapper{
+        display: flex;
+        width: 30%;
+        justify-content: center;
+        .photoOfHanson{
+            width: 50%;
+            border-radius: 5%;
+            margin-right: 5%;
+            height: 100%;
+            object-fit: contain;
+            min-width: 270px;
+        }
+    }
+    
+}

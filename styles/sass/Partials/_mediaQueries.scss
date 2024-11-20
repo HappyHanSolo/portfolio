@@ -1,0 +1,56 @@
+@media (max-width:1150px){
+    body{
+        .aboutWrapper{
+            flex-direction: column;
+            justify-content: center;
+            .aboutTextWrapper{
+                width: 90%;
+            }
+            .aboutImageWrapper{
+                width:100%;
+                .photoOfHanson{
+                    max-width: 270px;
+                }
+            }
+        }
+        .skillWrapper{
+            flex-direction: column;
+            justify-content: center;
+            .skillsText{
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media (max-width:900px) {
+    body{
+        .headerContainer{
+                display:flex;
+                flex-direction: column;
+                .headerTextWrapper{
+                    margin: 0 auto;
+                    h1{
+                        font-size: 4rem;
+                        text-align: center;
+                    }
+                    p{
+                        text-align: center;
+                    }
+                    a{
+                        display: flex;
+                        justify-content: center;
+                        margin: 10px;
+                    };
+                }
+                .headerImageWrapper{
+                    .sketchOfHanson{
+                        max-width: 250px;
+                        min-width: 0px;
+                    }
+                }
+            }
+    }
+    
+
+}
