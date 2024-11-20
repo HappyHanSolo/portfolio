@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.782dd415.css",
+    "main.js": "/static/js/main.14882cb6.js",
+    "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
+    "static/media/meow_code.gif": "/static/media/meow_code.692e986c616018eeb7a9.gif",
+    "index.html": "/index.html",
+    "main.782dd415.css.map": "/static/css/main.782dd415.css.map",
+    "main.14882cb6.js.map": "/static/js/main.14882cb6.js.map",
+    "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.782dd415.css",
+    "static/js/main.14882cb6.js"
+  ]
+}
