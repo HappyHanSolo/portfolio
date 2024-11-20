@@ -15,7 +15,7 @@ export default function ConnectForm({handleForm}){
 
                     <label htmlFor="message" className="sr-only"></label>
                     <textarea className="message" name="message" id="message" placeholder="Message me!" cols="30" rows="10" required></textarea>
-                    <input type="hidden" name="_next" value="http://localhost:3000/completedForm" />
+                    <input type="hidden" name="_next" value="https://hansonportfolio.vercel.app/completedForm" />
                     <div>
                         <button className="Send"
                          >Send</button>
