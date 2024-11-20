@@ -20,7 +20,7 @@ export default function Footer() {
                 <li><a href="https://github.com/HappyHanSolo?tab=repositories">Github</a></li>
                 <li><a href='https://x.com/HansonTweets'>X</a></li>
                 <li><a href="https://www.youtube.com/@hansonsadventure">Youtube</a></li>
-                {/* <li><a>Readings</a></li> */}
+                <li><a>Readings</a></li>
             </ul>
         </section>
         <section className='connect'>
