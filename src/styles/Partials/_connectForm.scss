@@ -19,6 +19,25 @@
         margin:0 auto;
         border-radius: 5px;
         padding: 30px;
+      
+        p{
+            font-size: 25px;
+            span{
+                color:#06cf9c;
+            }
+            img {
+                width: 25px;
+                height: auto;
+                margin: 5px;
+                vertical-align: bottom;
+            }
+
+        }
+
+        h2{
+            margin-top: 0;
+            margin-bottom: 0;
+        }
 
         h1::before, h1::after {
             content: '';
@@ -28,7 +47,10 @@
             width: 8%;
             height: 2px;
             background-color: #000;
-            margin:10px;
+            margin-right:10px;
+        }
+        h1::after{
+            margin-left:10px;
         }
 
         form{

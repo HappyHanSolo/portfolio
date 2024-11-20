@@ -20,11 +20,11 @@ export default function Footer() {
                 <li><a href="https://github.com/HappyHanSolo?tab=repositories">Github</a></li>
                 <li><a href='https://x.com/HansonTweets'>X</a></li>
                 <li><a href="https://www.youtube.com/@hansonsadventure">Youtube</a></li>
-                <li><a>Readings</a></li>
+                {/* <li><a>Readings</a></li> */}
             </ul>
         </section>
         <section className='connect'>
-            <p>Let's Build something together<img src={mewcode} alt="Meow_Code" /></p>     
+            <p>Let's build something together<img src={mewcode} alt="Meow_Code" /></p>     
             <p>hanson.wong01@gmail.com</p>
         </section>
     </div>
