@@ -1,0 +1,5 @@
+# Ignore ESLint cache
+node_modules/.cache/.eslintcache
+
+# Ignore Babel loader cache
+node_modules/.cache/babel-loader/
