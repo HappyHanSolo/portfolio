@@ -1,0 +1,77 @@
+@import '../Partials/variables';
+div{
+nav {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+
+    ul {
+        display: flex;
+        list-style: none;
+        
+        li {
+            padding: 10px 15px;
+            margin: 10px 5px;
+            font-size: 0.75rem;
+            font-family: $mainFont;
+            transition: all 0.3s ease;
+            border-radius: 25px;
+            text-transform: uppercase;
+            
+            &:not(:has(a.homelink)):hover {
+                background-color: #f1f5f9;
+
+            }
+            
+            &:has(a.homelink) {
+                position: fixed;
+                left: 20px;
+                display: inline-block;
+                transition: background-color 0.3s ease;
+                border-radius: 5px;
+                background-color: rgba(192,53,64);
+                
+                &:hover {
+                    background-color: red;
+                }
+            }
+            
+            &:has(a.connectlink) {
+                position: fixed;
+                right: 20px;
+                display: inline-block;
+            }
+            
+            a {
+                text-decoration: none;
+                color: black;
+                
+                &.homelink {
+                    font-family: Anton, sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.pikimin{
+    position: fixed;
+    bottom: -135px;
+    right: -400px;
+    animation: moveLeft 20s linear infinite;
+    
+}
+
+@keyframes moveLeft {
+    0% {
+        tranform: translateX(0);
+    }
+    100%{
+        transform: translateX(-150vw);
+    }
+}
+}

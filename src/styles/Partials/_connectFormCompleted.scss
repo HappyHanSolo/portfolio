@@ -1,0 +1,67 @@
+.completedContactBackground{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    
+    .completedContactFormWrapper{
+        position: relative;
+        top: 10%;
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        height: 80vh;
+        background-color: #f1f5f9;
+        margin:0 auto;
+        padding: 50px;
+        border-radius: 5px;
+        justify-content: center;
+        text-align: center;
+
+        p{
+            img {
+                width: 30px;
+                height: auto;
+                margin: 5px;
+                vertical-align: middle;
+            }
+        }
+
+
+        h1::before, h1::after {
+            content: '';
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            width: 8%;
+            height: 2px;
+            background-color: #000;
+            margin:10px;
+        }
+        button{
+            display: flex;
+            justify-content: center;
+            transition: background-color 0.3s ease;
+            border-radius: 5px;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin: 10px auto;
+            font-size: 0.75rem;
+            width: 10%;
+            background-color: rgba(192,53,64);       
+            &:hover {
+                background-color: red;
+            }
+        }
+        img {
+            width: 20vw;
+            margin: 0 auto;
+        }
+    }
+}
