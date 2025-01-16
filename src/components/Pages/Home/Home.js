@@ -46,7 +46,7 @@ export default function Home() {
         <div id="projects" className="ProjectWrapper">
           <div className="ProjectOverview">
               <ul>
-                <li><img src="https://picsum.photos/id/10/253/910"/><p>Pomodoro Project</p></li>
+                <li><a href="https://hanson-react-pomodoro.vercel.app/"><img src="https://picsum.photos/id/10/253/910"/><p>Pomodoro Project</p></a></li>
                 <li><img src="https://picsum.photos/id/20/253/910"/><p>Movie Tracker</p></li>
                 <li><img src="https://picsum.photos/id/30/253/910"/><p>Anime Tracker</p></li>
                 <li><img src="https://picsum.photos/id/40/253/910"/><p>Spoiler Shield</p></li>
